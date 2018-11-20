@@ -2,7 +2,7 @@
     "name": "aimtoget/aimtoget-agent-lib",
     "description": "PHP Library for Aimtoget Agents",
     "type": "library",
-    "license": "GNU",
+    "license": "Apache",
     "authors": [
         {
             "name": "Salawu Oluwadamilola Ezekiel",
