@@ -23,6 +23,10 @@ class ComposerStaticInit815818996224c918b6acb582e76c5206
             'GuzzleHttp\\Promise\\' => 19,
             'GuzzleHttp\\' => 11,
         ),
+        'A' => 
+        array (
+            'Aimtoget\\Agent\\' => 15,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -41,6 +45,10 @@ class ComposerStaticInit815818996224c918b6acb582e76c5206
         'GuzzleHttp\\' => 
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
+        ),
+        'Aimtoget\\Agent\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
         ),
     );
 
