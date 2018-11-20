@@ -1,0 +1,15 @@
+{
+    "name": "aimtoget/aimtoget-agent-lib",
+    "description": "PHP Library for Aimtoget Agents",
+    "type": "library",
+    "license": "GNU",
+    "authors": [
+        {
+            "name": "Salawu Oluwadamilola Ezekiel",
+            "email": "damilolaoffical@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    }
+}
