@@ -58,6 +58,6 @@ class Data extends Main
             throw new ServiceException($data->data->msg);
         }
 
-        return $data->data->reference;
+        return $data->data->ref;
     }
 }
