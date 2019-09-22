@@ -8,7 +8,12 @@ Using composer
 composer install aimtoget/aimtoget-agent-lib
 ```
 
-### Usage
+Add to your PHP code by including the **autoload.php** file
+```
+require_once "__DIR__/aimtoget-agent-lib/autoload.php";
+```
+
+### **Usage**
 
 - Configuration: You are required to initalize the configuration with your private key and wallet pin (Remember to always keep your private key **Private!!!**)
 
@@ -115,8 +120,53 @@ $reference = $service->pay($service_id, [
     'email' => $customer_email
  ]);
 ```
+## **Bank transfer**
 
-**Retrieve your transactions:** Get a list of all your transactions using our APIs
+- **Get all banks**
+```php
+<?php
+
+use Aimtoget\Agent\BankTransfer;
+
+$bank = new BankTransfer($config);
+
+//Get banks
+$banks = $bank->getBanks();
+```
+
+- **Resolve Account Details**
+```php
+<?php
+
+use Aimtoget\Agent\BankTransfer;
+
+$bank = new BankTransfer($config);
+$account_name = $bank->resolveAccount('-bank code--', '-account number-');
+
+echo $account_name;
+```
+
+- **Make bank transfer**
+```php
+<?php
+
+use Aimtoget\Agent\BankTransfer;
+
+$bank = new BankTransfer($config);
+$reference = $bank->transfer([
+    'amount' => 2000,
+    'bank_code' => '00007',
+    'account_number' => '0123456789',
+    'description' => 'Transfer narration'
+]);
+
+echo $reference;
+```
+
+## **Transaction Details**
+- **Retrieve your transactions:**
+
+Get a list of all your transactions using our APIs
 
 ```php
 <?php
