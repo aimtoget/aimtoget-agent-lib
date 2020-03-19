@@ -12,7 +12,7 @@ class Data extends Main
      *
      * @return array
      */
-    public function getAllVariations() : array
+    public function getAllVariations() : object
     {
         $res = $this->_config->getClient()->request('GET', 'data/variations/all');
         $content = $res->getBody()->getContents();
@@ -25,7 +25,7 @@ class Data extends Main
      * Get selected network variartion
      *
      * @param string $network_id
-     * @return void
+     * @return array
      */
     public function getNetworkVariations(string $network_id)
     {
