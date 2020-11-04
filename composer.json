@@ -3,6 +3,7 @@
     "description": "PHP Library for Aimtoget Agents",
     "type": "library",
     "license": "GPL-3.0-or-later",
+    "version": "0.1.6",
     "authors": [
         {
             "name": "Salawu Oluwadamilola Ezekiel",
@@ -10,7 +11,7 @@
         }
     ],
     "require": {
-        "guzzlehttp/guzzle": "^6.3"
+        "guzzlehttp/guzzle": "^7.2"
     },
     "autoload": {
         "psr-4": {
