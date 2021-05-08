@@ -47,10 +47,12 @@ class Config
     {
         $client = new Client([
             'base_uri' => $this->_base_uri,
-            'headers' => array(
+            RequestOptions::HEADERS => array(
                 'Content-type' => 'application/json',
                 'Authorization' => 'Bearer ' . $this->_key
-            )
+            ),
+            RequestOptions::TIMEOUT => 50,
+            RequestOptions::CONNECT_TIMEOUT => 30
         ]);
 
         return $client;
