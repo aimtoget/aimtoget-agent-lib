@@ -3,7 +3,7 @@
     "description": "PHP Library for Aimtoget Agents",
     "type": "library",
     "license": "GPL-3.0-or-later",
-    "version": "0.1.7",
+    "version": "0.1.8",
     "authors": [
         {
             "name": "Salawu Oluwadamilola Ezekiel",
