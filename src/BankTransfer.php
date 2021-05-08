@@ -74,4 +74,28 @@ class BankTransfer extends Main
 
         return $response->data->ref;
     }
+
+    /**
+     * Make async bank transfer
+     *
+     * @param array $data
+     * @return string Reference code
+     */
+    public function transferAsync(array $data)
+    {
+        $config = $this->_config;
+        $data = $config->withPin($data);
+
+        $request = $config->getClient()->request('POST', 'bank-transfer-async', [
+            RequestOptions::JSON => $data
+        ]);
+        $content = $request->getBody()->getContents();
+        $response = json_decode($content);
+
+        if($response->status === Config::STATUS_ERROR) {
+            throw new ServiceException($response->data->msg);
+        }
+
+        return $response->data->ref;
+    }    
 }
