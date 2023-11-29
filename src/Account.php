@@ -11,7 +11,7 @@ class Account extends Main
      *
      * @return string
      */
-    public function getBalance() : int
+    public function getBalance(): float
     {
         $res = $this->_config->getClient()->request('GET', 'balance');
         $content = $res->getBody()->getContents();
