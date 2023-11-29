@@ -1,21 +1,21 @@
 {
-    "name": "aimtoget/aimtoget-agent-lib",
-    "description": "PHP Library for Aimtoget Agents",
-    "type": "library",
-    "license": "GPL-3.0-or-later",
-    "version": "0.1.8",
-    "authors": [
-        {
-            "name": "Salawu Oluwadamilola Ezekiel",
-            "email": "damilolaoffical@gmail.com"
-        }
-    ],
-    "require": {
-        "guzzlehttp/guzzle": "^7.2"
-    },
-    "autoload": {
-        "psr-4": {
-            "Aimtoget\\Agent\\": "src/"
-        }
+  "name": "aimtoget/aimtoget-agent-lib",
+  "description": "PHP Library for Aimtoget Agents",
+  "type": "library",
+  "license": "GPL-3.0-or-later",
+  "version": "0.1.9",
+  "authors": [
+    {
+      "name": "Salawu Oluwadamilola Ezekiel",
+      "email": "damilolaoffical@gmail.com"
     }
+  ],
+  "require": {
+    "guzzlehttp/guzzle": "^7.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Aimtoget\\Agent\\": "src/"
+    }
+  }
 }
