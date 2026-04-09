@@ -3,19 +3,19 @@
   "description": "PHP Library for Aimtoget Agents",
   "type": "library",
   "license": "GPL-3.0-or-later",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "authors": [
     {
       "name": "Salawu Oluwadamilola Ezekiel",
       "email": "damilolaoffical@gmail.com"
     }
   ],
-  "require": {
-    "guzzlehttp/guzzle": "^7.2"
-  },
   "autoload": {
     "psr-4": {
       "Aimtoget\\Agent\\": "src/"
     }
+  },
+  "require": {
+    "guzzlehttp/guzzle": "^7.10"
   }
 }
